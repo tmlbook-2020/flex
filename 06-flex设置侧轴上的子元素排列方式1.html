@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>align-items主轴是x轴</title>
+    <style>
+        div{
+            display: flex;
+            width: 800px;
+            height: 400px;
+            background-color: pink;
+            /* 默认的主轴是x轴row */
+            flex-direction: row;
+            /* 子元素在主轴居中对齐 */
+            justify-content: center;
+            /* 侧轴拉伸，但是子盒子不要给高度 */
+            /* align-items: stretch; */
+            /* 我们需要一个侧轴居中，也是最常用的 */
+            align-items: center;
+        }
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: purple;
+            color: #fff;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+</html>

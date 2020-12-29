@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items主轴是y轴</title>
+    <style>
+        div{
+            display: flex;
+            width: 800px;
+            height: 400px;
+            background-color: pink;
+            /* 此时主轴的方向是y轴column */
+            flex-direction: column;
+            /* 主轴垂直居中 */
+            justify-content: center;
+            /* 侧轴是x轴，侧轴需要垂直居中 */
+            align-items: center;
+        }
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: purple;
+            color: #fff;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+</html>
